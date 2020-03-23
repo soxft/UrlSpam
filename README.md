@@ -1,5 +1,5 @@
 # urlspam
-![HitCount](http://hits.dwyl.com/soxft/soxft/UrlSpam.svg)
+[![](https://data.jsdelivr.com/v1/package/gh/soxft/Urlspam/badge)](https://www.jsdelivr.com/package/gh/soxft/Urlspam)
 <a href="http://www.apache.org/licenses/LICENSE-2.0.html"> 
 <img src="https://img.shields.io/github/license/soxft/UrlSpam.svg" alt="License"></a>
 <a href="https://github.com/soxft/UrlSpam/stargazers"> 
