@@ -38,7 +38,7 @@ class UrlSpam_Plugin implements Typecho_Plugin_Interface
     $tg_token = new Typecho_Widget_Helper_Form_Element_Text('tg_token', NULL,'','token','填写机器人的token');
     $form->addInput($tg_token);
 
-    $tg_id = new Typecho_Widget_Helper_Form_Element_Text('tg_id', NULL,'','填写你的id','可以添加https://t.me/@getidsbot发送/about 获取你的id');
+    $tg_id = new Typecho_Widget_Helper_Form_Element_Text('tg_id', NULL,'','填写你的id','可以添加https://t.me/getidsbot发送/about 获取你的id');
     $form->addInput($tg_id);
   }
 
