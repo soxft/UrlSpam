@@ -22,7 +22,7 @@ class UrlSpam_Plugin implements Typecho_Plugin_Interface
   public static function config(Typecho_Widget_Helper_Form $form) {
     echo "<p>欢迎使用本插件,本插件主要是为了有些人随意在博客下方评论某写无用链接而制作的,调用的腾讯网址检测api</p>";
     echo '<p>最后两行为垃圾评论TG推送设置,用于收到垃圾评论时推送到telegram bot,如不了解请留空</p>';
-    echo '<p>Designed by <a href="https://xsot.cn" target="_blank">xcosft</a> | <a href="https://github.com/soxft/urlspam" target="_blank">Github</a>求star哈哈哈';
+    echo '<p>Designed by <a href="https://xsot.cn" target="_blank">xcosft</a> | <a href="https://github.com/soxft/UrlSpam" target="_blank">Github</a>求star哈哈哈';
     echo '<hr />';
     $api = new Typecho_Widget_Helper_Form_Element_Text('api', NULL,'https://api.xsot.cn/urlsafe/?url=','网址安全检测API:','填写一个网址安全检测api,默认为我自建的,调用了腾讯网址检测api:(https://api.xsot.cn/urlsafe/?url=)');
     $form->addInput($api);
