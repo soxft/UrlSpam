@@ -67,14 +67,14 @@ class UrlSpam_Plugin implements Typecho_Plugin_Interface
       if ($type == 2) {
         $content = "评论网址不安全";
         $opt = $filter_set->url;
-        file_get_contents("https://api.telegram.org/bot$tg_token/sendMessage?chat_id=$tg_id&text=又有个脑残智障在你的博客上瞎评论了,评论网址是:[[$comment_url]]内容是[[$comment_text]]");
+        file_get_contents("https://api.telegram.org/bot$tg_token/sendMessage?chat_id=$tg_id&text=又有人在你的博客上瞎评论了,评论网址是:[[$comment_url]]内容是[[$comment_text]]");
       }
     }
 
     if (strpos($comment['text'],"http") !== false) {
       $content = "评论中包含网址";
       $opt = $filter_set->http;
-      file_get_contents("https://api.telegram.org/bot$tg_token/sendMessage?chat_id=$tg_id&text=又有个脑残智障在你的博客上瞎评论了,评论网址是:[[$comment_url]]内容是[[$comment_text]]");
+        file_get_contents("https://api.telegram.org/bot$tg_token/sendMessage?chat_id=$tg_id&text=又有人在你的博客上瞎评论了,评论网址是:[[$comment_url]]内容是[[$comment_text]]");
     }
 
     //处理
